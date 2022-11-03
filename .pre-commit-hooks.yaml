@@ -4,5 +4,8 @@
   name: Techdocs Replace index paths
   description: Copies the contents of readme.md to docs/index.md and rewrites all image paths accordingly. 
   entry: hooks/techdocs-replace-index.py
-  language: python
+  files: readme.md
+  language: script
   require_serial: true
+  verbose: true
+  pass_filenames: false
