@@ -1,0 +1,8 @@
+# This configuration file allows our pre-commit hooks to be used with pre-commit: http://pre-commit.com/
+
+- id: techdocs-replace-index
+  name: Techdocs Replace index paths
+  description: Copies the contents of readme.md to docs/index.md and rewrites all image paths accordingly. 
+  entry: hooks/techdocs-replace-index.py
+  language: python
+  require_serial: true
